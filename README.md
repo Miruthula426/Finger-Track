@@ -21,11 +21,17 @@ letters written in the air using finger movement captured via webcam.
 
 ## 📁 Project Structure
 Fingertrack/
+│
 ├── data.py
 ├── train_model.py
 ├── m.py
-├── set/ # generated (ignored)
-├── models/ # generated (ignored)
+├── README.md
+├── requirements.txt
+│
+├── set/                ❌ (DO NOT UPLOAD)
+├── models/             ❌ (DO NOT UPLOAD)
+└── .gitignore
+
 
 shell
 Copy code
