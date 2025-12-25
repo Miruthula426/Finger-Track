@@ -1,78 +1,73 @@
-# Finger-Track
-FingerTrack is an AI-powered air-writing system that detects finger movements using a webcam, converts them into images, and recognizes handwritten letters in real time using deep learning.
-# ✋ FingerTrack – Finger Traced Letter Recognition
+✋ FingerTrack – Air Writing Letter Recognition using AI
 
-FingerTrack is a computer vision + deep learning project that recognizes
-letters written in the air using finger movement captured via webcam.
+FingerTrack is an AI-powered computer vision project that recognizes letters written in the air using finger movements captured through a webcam. The system tracks finger motion in real time, converts it into an image, and predicts the written letter using a deep learning model.
 
-## 🚀 Features
-- Real-time finger tracking using MediaPipe
-- Air-writing using index finger
-- Automatic image generation from finger paths
-- CNN-based letter recognition
-- Live prediction with confidence score
+This project demonstrates practical skills in Computer Vision, Machine Learning, and Human–Computer Interaction.
 
-## 🧠 Technologies Used
-- Python
-- OpenCV
-- MediaPipe
-- TensorFlow / Keras
-- NumPy
+🚀 Key Features
+✍️ Air-writing using index finger (no touch required)
+🖐 Real-time hand & finger tracking using MediaPipe
+🧠 Automatic image generation from finger paths
+🔤 Letter recognition using CNN (TensorFlow / Keras)
+📊 Confidence-based prediction output
+💻 Runs in real time using a standard webcam
 
-## 📁 Project Structure
-Fingertrack/
-│
-├── data.py
-├── train_model.py
-├── m.py
-├── README.md
+🧠 Technologies Used
+Python
+OpenCV
+MediaPipe
+TensorFlow / Keras
+NumPy
+
+📁 Project Structure
+FingerTrack/
+├── data.py              # Collects finger-traced letter images
+├── train_model.py       # Trains CNN model on collected data
+├── m.py                 # Real-time letter prediction
+├── set/                 # Auto-generated training images (ignored in GitHub)
+├── models/              # Auto-generated trained model (ignored in GitHub)
 ├── requirements.txt
-│
-├── set/                ❌ (DO NOT UPLOAD)
-├── models/             ❌ (DO NOT UPLOAD)
-└── .gitignore
+└── README.md
 
+⚙️ How It Works
 
-shell
-Copy code
+Data Collection
+User writes letters in the air using finger movement.
+Motion path is captured and converted into grayscale images.
+Model Training
+A CNN model is trained on the generated images.
+The trained model is saved for later use.
+Prediction
+The system predicts the written letter in real time.
+Displays predicted character with confidence score.
 
-## ▶️ How to Run
-
-### 1. Install dependencies
-```bash
+▶️ How to Run the Project
+1️⃣ Install dependencies
 pip install -r requirements.txt
-2. Collect data
-bash
-Copy code
+2️⃣ Collect training data
 python data.py
-3. Train model
-bash
-Copy code
+Write at least 2 different letters for training.
+3️⃣ Train the model
 python train_model.py
-4. Predict letters
-bash
-Copy code
+4️⃣ Run real-time prediction
 python m.py
-⚠️ Notes
-The set/ and models/ folders are generated automatically.
 
-At least 2 letters are required for training.
+📌 Notes
+The set/ and models/ folders are generated automatically.
+These folders are excluded from GitHub using .gitignore.
+A webcam is required for real-time input.
+
+🎯 Applications
+
+Touchless handwriting recognition
+Assistive technology
+Gesture-based input systems
+AI-powered educational tools
 
 👩‍💻 Author
+
 Miruthula Sakthivel
+Aspiring Data Scientist | AI & Computer Vision Enthusiast
 
-yaml
-Copy code
-
----
-
-## 4️⃣ Create `requirements.txt`
-
-Create a file named **`requirements.txt`** and paste:
-
-```txt
-opencv-python
-mediapipe
-numpy
-tensorflow
-This is 🔑 for recruiters.
+📜 License
+This project is licensed under the MIT License.
